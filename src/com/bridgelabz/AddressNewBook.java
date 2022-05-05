@@ -77,6 +77,15 @@ public class AddressNewBook {
     public void setEmail(String email) {
         this.email = email;
     }
+    public String toString() {
+
+        return "Contact [FirstName=" + firstName + ", LastName=" + lastName + ", Address=" + address + ", " +
+                "City=" + city + ", State=" + state + ", ZipCode=" + zipCode + ", PhoneNumber=" + phoneNumber + ", " +
+                "Email=" + email + "]";
+    }
+
+
+
 
     public static void main(String[] args) {
         AddressNewBook obj=new AddressNewBook();
@@ -98,6 +107,6 @@ public class AddressNewBook {
         System.out.println(obj.getPhoneNumber());
         System.out.println(obj.getState());
         System.out.println(obj.getZipCode());
-
+        obj.toString();
     }
 }
